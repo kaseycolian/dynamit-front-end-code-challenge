@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:  'Khula', sans-serif;
+	/*max-width: 100vw;*/
+	 max-width: 100%;
+	/*z-index: 1;*/
+	box-shadow: none;
+}
+h2{
+	color: #56555a;
+}
+p{
+	color: #808080;
+}
+body{
+	display: grid;
+	grid-template-rows: auto 4rem 30rem auto 2rem;
+	color: green;
+}
+header{
+	display: grid;
+	grid-template-columns: 6fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 0;
+	/*width: 100vw;*/
+}
+header img{
+	height: 10rem;
+	width: 10rem;
+}
+nav{
+	background-color: yellow;
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+	background-color: pink;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+h1{
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
+article{
+	background-color: lightblue;
+	display: grid;
+	/*grid-template-columns: repeat(2, 1fr);*/
+	grid-template-rows: repeat(3, 1fr);
+}
+.hotDogContent{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.hotDogDetails{
+	display: grid;
+	grid-template-columns: 5rem auto;
+	margin-left: 5rem;
+    margin-right: 3rem;
+}
+.headerTop, .headerBottom{
+   font-size: 0;
+}
+a:link{
+	text-decoration: none;
+}
+.hotDogOutline img{
+	height: 3rem;
+	width: 3rem;
+}
+.moreDogsButton{
+	height: 3rem;
+	width: 12rem;
+	font-size: .75rem;
+	border-radius: .5rem;
+	border-style: none;
+	background: blue;
+	padding: .5rem;
+}
+
+.hotDogImage img{
+	height: 50rem;
+	width: 50rem;
+}
+.horizontalLine{
+	color: #85959c;
+	border-bottom: solid;
+	width: 3rem;
+	height: 1rem;
+}
+
+.verticalLine{
+	color: #adadad;
+	border-left: solid;
+	height: 1rem;
+}
+footer{
+	background-color: #d6d6d6;
+	grid-template-columns: 1fr 1fr;
+    display: grid;
+	color: #59595c;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.footerRight{
+	display: inline-flex;
+	justify-self: end;
+}
