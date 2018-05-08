@@ -16,7 +16,7 @@ p{
 }
 body{
 	display: grid;
-	grid-template-rows: auto 4rem 30rem auto 2rem;
+	grid-template-rows: 30rem 4rem 30rem auto 2rem;
 	color: green;
 }
 header{
@@ -24,11 +24,15 @@ header{
 	grid-template-columns: 6fr;
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 0;
+	overflow: hidden;
 	/*width: 100vw;*/
 }
 header img{
-	height: 10rem;
-	width: 10rem;
+	height: 15rem;
+	width: -webkit-fill-available
+}
+.headerTop, .headerBottom{
+	    display: flex;
 }
 nav{
 	background-color: yellow;
@@ -36,19 +40,25 @@ nav{
     justify-content: center;
     align-items: center;
 }
+nav a{
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
 main{
 	background-color: pink;
 	display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 30rem;
-    margin-right: 30rem;
+ /*   margin-left: 30rem;
+    margin-right: 30rem;*/
 }
 h1{
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
+	padding-left: 30rem;
+	padding-right: 30rem;
 }
 article{
 	background-color: lightblue;
@@ -74,8 +84,8 @@ a:link{
 	text-decoration: none;
 }
 .hotDogOutline img{
-	height: 3rem;
-	width: 3rem;
+	height: 4rem;
+	width: 4rem;
 }
 .moreDogsButton{
 	height: 3rem;
@@ -88,8 +98,8 @@ a:link{
 }
 
 .hotDogImage img{
-	height: 50rem;
-	width: 50rem;
+	/*height: 45rem;*/
+	width: -webkit-fill-available;
 }
 .horizontalLine{
 	color: #85959c;
