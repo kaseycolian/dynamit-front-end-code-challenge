@@ -39,7 +39,7 @@ header{
 .instagram{
 	display: grid;
 	grid-template-columns: auto auto;
-	position: fixed;
+	position: absolute;
     top: 0;
     right: 0;
      margin-right: .25rem;
