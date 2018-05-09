@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family:  'Khula', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	max-width: 100%;
  	box-shadow: none;
  	--dark-text: #56555a;
-
 }
 h2{
 	color: #56555a;
@@ -107,11 +108,11 @@ article{
     to {transform:rotate(0deg);}
 }
 .moreDogsButton{
-	height: 3rem;
-	width: 12rem;
+	height: 2.5rem;
+	width: 13rem;
 	font-size: .75rem;
 	color: white;
-	border-radius: .5rem;
+	border-radius: .3rem;
 	border-style: none;
 	background: #286782;
 	padding: .5rem;
