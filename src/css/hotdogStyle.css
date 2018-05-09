@@ -8,9 +8,8 @@
 	/*z-index: 1;*/
 	box-shadow: none;
 }
-h1{
-	font-size: 3rem;
-}
+
+/*@media only screen and (min-width: 992px){*/
 h2{
 	color: #56555a;
 }
@@ -32,9 +31,9 @@ header{
 	display: grid;
 	grid-template-columns: 6fr;
 	grid-template-rows: repeat(2, 1fr);
-	/*grid-gap: 0;*/
+	height: 21rem;
 	overflow: hidden;
-	/*width: 100vw;*/
+	background-image: url(../../images/header/header2.jpg);
 }
 header img{
 	height: 9rem;
@@ -45,14 +44,11 @@ header img{
 }
 nav{
 	background-color: yellow;
-	/*display: flex;*/
     justify-content: center;
     align-items: center;
-    /*border-bottom: solid #e8e8e8;*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
-    /*position: relative;*/
 }
 ul{
 	display: inline-flex;
@@ -64,10 +60,6 @@ ul{
 li{
 	float: left;
 	white-space: nowrap;
-	/*align-self: center;*/
-	/*justify-content: center;
-	flex-wrap: nowrap;
-	text-align: center;*/
 }
 nav a{
 	margin-left: 2rem;
@@ -79,15 +71,14 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
- /*   margin-left: 30rem;
-    margin-right: 30rem;*/
 }
 h1{
+	font-size: 3rem;
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
-	padding-left: 20rem;
-	padding-right: 20rem;
+	padding-left: 15rem;
+	padding-right: 15rem;
 }
 article{
 	background-color: lightblue;
@@ -185,13 +176,54 @@ footer{
 .footerRight{
 	display: inline-flex;
 	justify-self: end;
+	text-align: center;
 }
 
 .footerHomeLinkMobile{
 	display: none;
 }
+/*}*/
+/*@media only screen and (min-width: 768px){
+		.hotDogContent{
+		grid-template-columns: 1fr;
+	}
+	#beefDetails{
+		grid-row: 2;
+		display: grid;
+   		grid-template-columns: 5rem auto;
+	}
+	#vegitarianDetails{
+		grid-row: 6;
+		display: grid;
+    	grid-template-columns: 5rem auto;
+	}
+	.hotDogDetails{
+		margin-left: 2rem;
+    	margin-right: 2rem;
+		margin-bottom: 2.5rem;
+		margin-top: 2.5rem;
+	}
+	h1{
+		padding-left: 10rem;
+	    padding-right: 10rem;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+	.verticalLine{
+		display: none;
+	}
+	.footerRight{
+		display: grid;
+		text-align: center;
+	}
+	.footerHomeLinkMobile{
+		display: inline-flex;
+	}
+}*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 	.hotDogContent{
 		grid-template-columns: 1fr;
 	}
@@ -224,7 +256,7 @@ footer{
 	}
 	.footerRight{
 		display: grid;
-		text-align: center;
+		/*text-align: center;*/
 	}
 	.footerHomeLinkMobile{
 		display: inline-flex;
