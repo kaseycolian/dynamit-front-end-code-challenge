@@ -55,7 +55,7 @@ nav a{
 	margin-right: 2rem;
 }
 main{
-	background-color: pink;
+	background-color: #fafafa;
 	display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,10 +93,12 @@ article{
 .hotDogOutline img:hover{
 	animation-name: rockingHotDog;
 	animation: rockingHotDog 2s infinite;
-	transition:.5s;
+	transition:1s;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
 }
 @keyframes rockingHotDog {
-	0% {
+	/*0% {
 		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
 		background: radial-gradient(circle at center, black 77%, rgba(191, 70, 225, 1));
 	}50% {
@@ -105,7 +107,9 @@ article{
 	} 100% {
 		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
 		background: radial-gradient(circle at center, black 77%,  rgba(191, 70, 225, 1));
-	}
+	}*/
+	from {transform:rotate(90deg);}
+    to {transform:rotate(0deg);}
 }
 .moreDogsButton{
 	height: 3rem;
