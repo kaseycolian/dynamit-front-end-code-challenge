@@ -9,9 +9,7 @@
  	box-shadow: none;
  	--dark-text: #56555a;
  	--blue: #286782;
- 	/*overflow: hidden;*/
-
-}
+ }
 h2{
 	color: #56555a;
 }
@@ -65,9 +63,6 @@ header{
 	font-size: .8rem;
 }
 nav{
-	/*display: inline-flex;*/
-/*    justify-content: center;
-    align-items: center;*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -83,10 +78,8 @@ li{
 	white-space: nowrap;
 	font-size: 1.5rem;
 	font-weight: bold;
-	 /*float: right;*/
 	padding-left: 1rem;
     padding-right: 1rem;
-
 }
 nav a{
 	margin-left: 2rem;
@@ -207,7 +200,7 @@ footer{
 	display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.hotDogContent{
 		grid-template-columns: 1fr;
 	}
@@ -231,6 +224,10 @@ footer{
 		padding-left: 5rem;
 	    padding-right: 5rem;
 	}
+	ul{
+		display: flex;
+		flex-direction: column;
+	}
 	li{
 		padding-left: .5rem;
     	padding-right: .5rem;
@@ -248,5 +245,4 @@ footer{
 	.footerHomeLinkMobile{
 		display: inline-flex;
 	}
-
 }
