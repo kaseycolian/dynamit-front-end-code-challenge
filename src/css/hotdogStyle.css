@@ -65,8 +65,9 @@ header{
 	font-size: .8rem;
 }
 nav{
-    justify-content: center;
-    align-items: center;
+	/*display: inline-flex;*/
+/*    justify-content: center;
+    align-items: center;*/
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -76,14 +77,15 @@ ul{
 	justify-content: center;
 	align-items: center;
  	list-style-type: none;
- 	overflow: hidden;
+ 	flex-wrap: wrap;
 }
 li{
 	white-space: nowrap;
 	font-size: 1.5rem;
 	font-weight: bold;
-	/*padding-left: 1rem;
-    padding-right: 1rem;*/
+	 /*float: right;*/
+	padding-left: 1rem;
+    padding-right: 1rem;
 
 }
 nav a{
