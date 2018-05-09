@@ -31,13 +31,34 @@ body{
 	grid-template-rows: repeat(5, auto);
 	color: green;
 }
-header{
-	display: grid;
-	grid-template-columns: 6fr;
-	grid-template-rows: repeat(2, 1fr);
-	height: 21rem;
+header{	
+	height: 18rem;
 	overflow: hidden;
-	background-image: url(../../images/header/header2.jpg);
+	background-image: url(../../images/header/header.jpg);
+}
+.instagram{
+	display: grid;
+	grid-template-columns: auto auto;
+	position: fixed;
+    top: 0;
+    right: 0;
+     margin-right: .25rem;
+    margin-top: .25rem;
+  /*  align-items: start;
+    justify-content: start;
+    justify-self: start;*/
+}
+.instagram img{
+	width: 1rem;
+	height: 1rem;
+}
+#instagramHashTag{
+	/*position: fixed;*/
+    align-self: start;
+}
+.instagram a:link, .instagram a:visited{
+	color: white;
+	font-size: .5rem;
 }
 nav{
     justify-content: center;
@@ -77,8 +98,8 @@ h1{
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
-	padding-left: 15rem;
-	padding-right: 15rem;
+	padding-left: 14rem;
+	padding-right: 14rem;
 }
 article{
 	background-color: lightblue;
