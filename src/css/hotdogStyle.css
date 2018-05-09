@@ -155,11 +155,13 @@ article{
     background-color: red;
 }
 .hotDogImage{
-	object-fit: cover;
+	display:flex;
+	flex-direction:column;
 }
 .hotDogImage img{
 	height: auto;
 	width: -webkit-fill-available;
+	width: -moz-available;
 	object-fit: cover;
 }
 .horizontalLine{
