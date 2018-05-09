@@ -8,6 +8,7 @@
 	max-width: 100%;
  	box-shadow: none;
  	--dark-text: #56555a;
+ 	--blue: #286782;
 }
 h2{
 	color: #56555a;
@@ -16,20 +17,18 @@ p{
 	color: #808080;
 }
 a:link{
-	/*--dark-text:*/
 	color: var(--dark-text);
 	text-decoration: none;
-}
-a:hover{
-	color: #286782;
 }
 a:visited{
 	color: var(--dark-text);
 }
+a:hover{
+	color: var(--blue);
+}
 body{
 	display: grid;
 	grid-template-rows: repeat(5, auto);
-	color: green;
 }
 header{	
 	height: 18rem;
@@ -42,23 +41,23 @@ header{
 	position: absolute;
     top: 0;
     right: 0;
-     margin-right: .25rem;
+    margin-right: .75rem;
     margin-top: .25rem;
-  /*  align-items: start;
-    justify-content: start;
-    justify-self: start;*/
 }
 .instagram img{
 	width: 1rem;
 	height: 1rem;
 }
+.instagram:hover{
+	transform: scale(1.2);
+	color: red;
+}
 #instagramHashTag{
-	/*position: fixed;*/
     align-self: start;
 }
 .instagram a:link, .instagram a:visited{
 	color: white;
-	font-size: .5rem;
+	font-size: .8rem;
 }
 nav{
     justify-content: center;
@@ -89,7 +88,6 @@ main{
     justify-content: center;
     align-items: center;
     border-top: solid .2rem #eeeced;
-    /*border-color: #eeeced;*/
 }
 h1{
 	color: #aeaeae;
@@ -102,7 +100,7 @@ h1{
 	padding-right: 14rem;
 }
 article{
-	/*background-color: lightblue;*/
+	background-color: white;
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 }
@@ -134,9 +132,9 @@ article{
     to {transform:rotate(0deg);}
 }
 .moreDogsButton{
-	height: 2.5rem;
-	width: 13rem;
-	font-size: .75rem;
+	height: 2.75rem;
+	width: 15rem;
+	font-size: 1rem;
 	color: white;
 	border-radius: .3rem;
 	border-style: none;
@@ -147,8 +145,17 @@ article{
 #moreDogsButtonLink:link, #moreDogsButtonLink:visited{
 	color: white;
 }
-#moreDogsButtonLink:hover{
-	color: red;
+.moreDogsButton:hover{
+	/*color: red;*/
+	/*font-weight: bold;*/
+	transform: scale(1.1);
+	font-weight: bold;
+	background-image: url(../../images/flame.png);
+    background-size: contain;
+    background-color: red;
+}
+.hotDogImage{
+	object-fit: cover;
 }
 .hotDogImage img{
 	height: auto;
@@ -184,7 +191,6 @@ footer{
 	justify-self: end;
 	text-align: center;
 }
-
 .footerHomeLinkMobile{
 	display: none;
 }
