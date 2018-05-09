@@ -5,6 +5,8 @@
 	font-family:  'Khula', sans-serif;
 	max-width: 100%;
  	box-shadow: none;
+ 	--dark-text: #56555a;
+
 }
 h2{
 	color: #56555a;
@@ -13,11 +15,15 @@ p{
 	color: #808080;
 }
 a:link{
-	color: #454545;
+	/*--dark-text:*/
+	color: var(--dark-text);
 	text-decoration: none;
 }
 a:hover{
-	color: red;
+	color: #286782;
+}
+a:visited{
+	color: var(--dark-text);
 }
 body{
 	display: grid;
@@ -33,7 +39,6 @@ header{
 	background-image: url(../../images/header/header2.jpg);
 }
 nav{
-	background-color: yellow;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
@@ -98,16 +103,6 @@ article{
 	animation-timing-function: ease-in-out;
 }
 @keyframes rockingHotDog {
-	/*0% {
-		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
-		background: radial-gradient(circle at center, black 77%, rgba(191, 70, 225, 1));
-	}50% {
-		box-shadow: 0 0 5px rgba(191, 70, 225, 1);
-		background: radial-gradient(circle at center, black 70%, rgba(191, 70, 225, .6)));
-	} 100% {
-		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
-		background: radial-gradient(circle at center, black 77%,  rgba(191, 70, 225, 1));
-	}*/
 	from {transform:rotate(90deg);}
     to {transform:rotate(0deg);}
 }
