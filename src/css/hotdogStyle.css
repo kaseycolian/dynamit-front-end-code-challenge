@@ -9,7 +9,7 @@
  	box-shadow: none;
  	--dark-text: #56555a;
  	--blue: #286782;
- }
+}
 h2{
 	color: #56555a;
 }
@@ -78,13 +78,13 @@ li{
 	white-space: nowrap;
 	font-size: 1.5rem;
 	font-weight: bold;
-	padding-left: 1rem;
-    padding-right: 1rem;
+	padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
-nav a{
+/*nav a{
 	margin-left: 2rem;
 	margin-right: 2rem;
-}
+}*/
 main{
 	background-color: #fafafa;
 	display: flex;
@@ -200,7 +200,22 @@ footer{
 	display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
+	li{
+		padding-left: 1.25rem;
+    	padding-right: 1.25rem;
+    }
+    h1{
+    	font-size: 2.5rem;
+    	padding-left: 5rem;
+  		padding-right: 5rem;
+    }
+    .hotDogDetails{
+    	margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
 	.hotDogContent{
 		grid-template-columns: 1fr;
 	}
@@ -221,16 +236,23 @@ footer{
 		margin-top: 2.5rem;
 	}
 	h1{
-		padding-left: 5rem;
-	    padding-right: 5rem;
+		font-size: 2.25rem;
+		padding-left: 3rem;
+	    padding-right: 3rem;
 	}
 	ul{
 		display: flex;
-		flex-direction: column;
 	}
 	li{
-		padding-left: .5rem;
-    	padding-right: .5rem;
+		padding-left: 0.25rem;
+  		padding-right: .25rem;
+    	font-size: 1.25rem;
+	}
+	.hotDogOutline img{
+		margin-top: 1.5rem;
+	}
+	.moreDogsButton{
+		margin-bottom: 4rem;
 	}
 	footer{
 		display: flex;
@@ -246,3 +268,14 @@ footer{
 		display: inline-flex;
 	}
 }
+@media only screen and (max-width: 350px) {
+	h1{
+		font-size: 2rem;
+	}
+	.moreDogsButton{
+		margin-bottom: 3rem;
+	}
+	li{
+		font-size: 1rem;
+	}
+	}
