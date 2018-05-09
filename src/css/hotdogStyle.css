@@ -20,9 +20,12 @@ p{
 a:link{
 	color: #454545;
 }
+a:hover{
+	color: red;
+}
 body{
 	display: grid;
-	grid-template-rows: auto auto 30rem auto 2rem;
+	grid-template-rows: repeat(5, auto);
 	color: green;
 }
 header{
@@ -42,12 +45,29 @@ header img{
 }
 nav{
 	background-color: yellow;
-	display: inline-flex;
+	/*display: flex;*/
     justify-content: center;
     align-items: center;
-    border-bottom: solid #e8e8e8;
+    /*border-bottom: solid #e8e8e8;*/
     padding-top: 1rem;
     padding-bottom: 1rem;
+    text-align: center;
+    /*position: relative;*/
+}
+ul{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+ 	list-style-type: none;
+
+}
+li{
+	float: left;
+	white-space: nowrap;
+	/*align-self: center;*/
+	/*justify-content: center;
+	flex-wrap: nowrap;
+	text-align: center;*/
 }
 nav a{
 	margin-left: 2rem;
@@ -66,8 +86,8 @@ h1{
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
-	padding-left: 30rem;
-	padding-right: 30rem;
+	padding-left: 20rem;
+	padding-right: 20rem;
 }
 article{
 	background-color: lightblue;
@@ -95,6 +115,7 @@ a:link{
 .hotDogOutline img{
 	height: 4rem;
 	width: 4rem;
+	margin-top: 3rem;
 }
 .moreDogsButton{
 	height: 3rem;
@@ -106,6 +127,12 @@ a:link{
 	background: #286782;
 	padding: .5rem;
 	margin-bottom: 5rem;
+}
+#moreDogsButtonLink:link, #moreDogsButtonLink:visited{
+	color: white;
+}
+#moreDogsButtonLink:hover{
+	color: red;
 }
 
 .hotDogImage img{
@@ -151,13 +178,24 @@ footer{
 		display: flex;
 	}
 	.hotDogDetails{
-		margin-left: 10rem;
-		margin-right: 10rem;
+		margin-left: 2rem;
+    	margin-right: 2rem;
 		margin-bottom: 2.5rem;
 		margin-top: 2.5rem;
 	}
 	h1{
 		padding-left: 5rem;
 	    padding-right: 5rem;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+	.verticalLine{
+		display: none;
+	}
+	.footerRight{
+		display: grid;
+		text-align: center;
 	}
 }
