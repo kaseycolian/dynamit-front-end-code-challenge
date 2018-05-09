@@ -8,15 +8,21 @@
 	/*z-index: 1;*/
 	box-shadow: none;
 }
+h1{
+	font-size: 3rem;
+}
 h2{
 	color: #56555a;
 }
 p{
 	color: #808080;
 }
+a:link{
+	color: #454545;
+}
 body{
 	display: grid;
-	grid-template-rows: 30rem 4rem 30rem auto 2rem;
+	grid-template-rows: auto auto 30rem auto 2rem;
 	color: green;
 }
 header{
@@ -28,8 +34,8 @@ header{
 	/*width: 100vw;*/
 }
 header img{
-	height: 15rem;
-	width: -webkit-fill-available
+	height: 9rem;
+	width: -webkit-fill-available;
 }
 .headerTop, .headerBottom{
 	    display: flex;
@@ -39,6 +45,9 @@ nav{
 	display: inline-flex;
     justify-content: center;
     align-items: center;
+    border-bottom: solid #e8e8e8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 nav a{
 	margin-left: 2rem;
@@ -91,10 +100,12 @@ a:link{
 	height: 3rem;
 	width: 12rem;
 	font-size: .75rem;
+	color: white;
 	border-radius: .5rem;
 	border-style: none;
-	background: blue;
+	background: #286782;
 	padding: .5rem;
+	margin-bottom: 5rem;
 }
 
 .hotDogImage img{
@@ -125,4 +136,28 @@ footer{
 .footerRight{
 	display: inline-flex;
 	justify-self: end;
+}
+
+@media only screen and (max-width: 700px) {
+	.hotDogContent{
+		grid-template-columns: 1fr;
+	}
+	#beefDetails{
+		grid-row: 2;
+		display: flex;
+	}
+	#vegitarianDetails{
+		grid-row: 6;
+		display: flex;
+	}
+	.hotDogDetails{
+		margin-left: 10rem;
+		margin-right: 10rem;
+		margin-bottom: 2.5rem;
+		margin-top: 2.5rem;
+	}
+	h1{
+		padding-left: 5rem;
+	    padding-right: 5rem;
+	}
 }
