@@ -53,8 +53,9 @@ ul{
  	list-style-type: none;
 }
 li{
-	float: left;
 	white-space: nowrap;
+	padding-left: 1rem;
+    padding-right: 1rem;
 }
 nav a{
 	margin-left: 2rem;
@@ -189,6 +190,10 @@ footer{
 	h1{
 		padding-left: 5rem;
 	    padding-right: 5rem;
+	}
+	li{
+		padding-left: .5rem;
+    	padding-right: .5rem;
 	}
 	footer{
 		display: flex;
