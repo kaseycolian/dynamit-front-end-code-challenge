@@ -66,9 +66,13 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: solid .2rem #eeeced;
+    /*border-color: #eeeced;*/
 }
 h1{
-	font-size: 3rem;
+	color: #aeaeae;
+	font-size: 3.2rem;
+	font-weight: 100;
 	text-align: center;
 	margin-top: 1rem;
 	margin-bottom: 3rem;
@@ -116,7 +120,7 @@ article{
 	border-style: none;
 	background: #286782;
 	padding: .5rem;
-	margin-bottom: 5rem;
+	margin-bottom: 8rem;
 }
 #moreDogsButtonLink:link, #moreDogsButtonLink:visited{
 	color: white;
