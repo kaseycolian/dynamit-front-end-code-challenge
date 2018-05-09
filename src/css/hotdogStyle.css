@@ -180,11 +180,13 @@ footer{
 	}
 	#beefDetails{
 		grid-row: 2;
-		display: flex;
+		display: grid;
+   		grid-template-columns: 5rem auto;
 	}
 	#vegitarianDetails{
 		grid-row: 6;
-		display: flex;
+		display: grid;
+    	grid-template-columns: 5rem auto;
 	}
 	.hotDogDetails{
 		margin-left: 2rem;
@@ -208,7 +210,7 @@ footer{
 		text-align: center;
 	}
 	.footerHomeLinkMobile{
-	display: inline-flex;
-}
+		display: inline-flex;
+	}
 
 }
