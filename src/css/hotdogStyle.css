@@ -117,6 +117,23 @@ a:link{
 	width: 4rem;
 	margin-top: 3rem;
 }
+.hotDogOutline img:hover{
+	animation-name: rockingHotDog;
+	animation: rockingHotDog 2s infinite;
+	transition:.5s;
+}
+@keyframes rockingHotDog {
+	0% {
+		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
+		background: radial-gradient(circle at center, black 77%, rgba(191, 70, 225, 1));
+	}50% {
+		box-shadow: 0 0 5px rgba(191, 70, 225, 1);
+		background: radial-gradient(circle at center, black 70%, rgba(191, 70, 225, .6)));
+	} 100% {
+		box-shadow: 0 0 23px rgba(191, 70, 225, 1);
+		background: radial-gradient(circle at center, black 77%,  rgba(191, 70, 225, 1));
+	}
+}
 .moreDogsButton{
 	height: 3rem;
 	width: 12rem;
