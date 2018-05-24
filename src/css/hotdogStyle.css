@@ -165,7 +165,6 @@ article{
 	height: auto;
 	width: -webkit-fill-available;
 	width: -moz-available;
-	object-fit: cover;
 }
 .horizontalLine{
 	color: #85959c;
@@ -199,7 +198,11 @@ footer{
 .footerHomeLinkMobile{
 	display: none;
 }
-
+@media only screen and (max-width: 1100px){
+	 .hotDogImage img{
+		height: 23rem;
+	}
+}
 @media only screen and (max-width: 768px) {
 	li{
 		padding-left: 1.25rem;
@@ -213,9 +216,10 @@ footer{
     .hotDogDetails{
     	margin-left: 3rem;
     }
+   
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.hotDogContent{
 		grid-template-columns: 1fr;
 	}
@@ -254,6 +258,9 @@ footer{
 	.moreDogsButton{
 		margin-bottom: 4rem;
 	}
+	.hotDogImage img{
+		height: auto;
+	}
 	footer{
 		display: flex;
 		flex-direction: column;
@@ -278,4 +285,4 @@ footer{
 	li{
 		font-size: 1rem;
 	}
-	}
+}
