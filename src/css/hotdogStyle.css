@@ -55,8 +55,11 @@ header{
 	transform: scale(1.2);
 	color: red;
 }
+#instagramIcon{
+	padding-top: .3rem;
+}
 #instagramHashTag{
-    align-self: start;
+    align-self: center;
 }
 .instagram a:link, .instagram a:visited{
 	color: white;
